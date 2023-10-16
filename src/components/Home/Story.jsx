@@ -12,7 +12,11 @@ function AddToStoryCard() {
         className="w-full h-2/3 bg-center bg-cover"
         style={{ backgroundImage: `url(${profilepic})` }}
       ></div> */}
-      <img src={profilepic} alt="profile" className="w-full" />
+      <img
+        src={profilepic}
+        alt="profile"
+        className="w-full rounded-tl-xl rounded-tr-xl"
+      />
       <div className="rounded-full w-[30px] h-[30px] bg-cyan-600 flex items-center justify-center text-white -mt-4 mb-2  ring-2 ring-white">
         <AiOutlinePlus />
       </div>

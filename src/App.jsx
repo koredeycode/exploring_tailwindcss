@@ -15,14 +15,15 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      console.log('here');
       setIsLoading(false);
     }, 4000);
   }, []);
 
   return isLoading ? (
-    <div className="h-screen w-screen flex justify-center items-center font-extrabold text-cyan-600 animate-pulse text-4xl">
-      Facebook
+    <div className="h-screen w-screen flex justify-center items-center font-extrabold text-cyan-600 text-4xl">
+      <div className="rounded-full w-20 h-20 shadow-lg flex justify-center items-center font-extrabold text-cyan-600 text-4xl">
+        f
+      </div>
     </div>
   ) : (
     <div className="bg-gray-400 relative max-w-3xl mx-auto">
