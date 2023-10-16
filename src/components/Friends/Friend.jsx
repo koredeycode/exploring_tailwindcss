@@ -10,15 +10,15 @@ const Friend = ({ isAddFriend }) => {
         className="rounded-full ring-1 ring-gray w-[90px] h-[90px]"
       />
       <div className="flex-1 flex flex-col gap-2">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-end">
           <span className="text-lg">Lawal Olamide</span>
-          <span className="text-xs text-gray-500">10w</span>
+          <span className="text-sm text-gray-500">10w</span>
         </div>
         <div className="flex items-center">
           <img
             src={profilepic}
             alt=""
-            className="w-[30px] h-[30px] object-contain rounded-full ring-white z-10 ring-2"
+            className="w-[30px] h-[30px] object-contain rounded-full ring-white z-5 ring-2"
           />
           <img
             src={profilepic}

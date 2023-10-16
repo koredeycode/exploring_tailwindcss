@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import {
   Home,
   Friends,
@@ -10,7 +11,20 @@ import NavBar from './components/NavBar';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log('here');
+      setIsLoading(false);
+    }, 4000);
+  }, []);
+
+  return isLoading ? (
+    <div className="h-screen w-screen flex justify-center items-center font-extrabold text-cyan-600 animate-pulse text-4xl">
+      Facebook
+    </div>
+  ) : (
     <div className="bg-gray-400 relative max-w-3xl mx-auto">
       <NavBar />
       <Routes>
