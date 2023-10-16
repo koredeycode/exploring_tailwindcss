@@ -3,11 +3,11 @@ import profilepic from '../../assets/profilepic.png';
 
 const Friend = ({ isAddFriend }) => {
   return (
-    <div className="flex flex-row p-2 gap-2 items-end mt-1 mx-2 mb-2">
+    <div className="flex flex-row p-3 gap-2 items-end mt-1 mx-2 mb-2">
       <img
         src={profilepic}
         alt="profilepic"
-        className="rounded-full ring-1 ring-gray w-[90px] h-[90px]"
+        className="rounded-full ring-1 ring-gray-600 w-[90px] h-[90px]"
       />
       <div className="flex-1 flex flex-col gap-2">
         <div className="flex justify-between items-end">
@@ -18,12 +18,12 @@ const Friend = ({ isAddFriend }) => {
           <img
             src={profilepic}
             alt=""
-            className="w-[30px] h-[30px] object-contain rounded-full ring-white z-5 ring-2"
+            className="w-[30px] h-[30px] object-contain rounded-full ring-2 ring-white"
           />
           <img
             src={profilepic}
             alt=""
-            className="w-[30px] h-[30px] object-contain rounded-full ring-gray -ml-1"
+            className="w-[30px] h-[30px] object-contain rounded-full ring-2 ring-white -ml-1"
           />
           <span className="text-gray-500 text-md ml-2">15 mutual friends</span>
         </div>
