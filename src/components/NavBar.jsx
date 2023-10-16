@@ -33,11 +33,11 @@ export default function NavBar() {
   const isMarketplace = pathname === '/marketplace';
 
   return (
-    <nav className="border-b-2 sticky w-full top-0 bg-white z-10">
+    <nav className="border-b-2 sticky w-full top-0 bg-white z-10 pt-2">
       <div className="mb-2">
         <div
           className={`${
-            isHome ? 'flex justify-between items-end mx-4 mt-4' : 'hidden'
+            isHome ? 'flex justify-between items-end mx-4' : 'hidden'
           }`}
         >
           <h2 className="text-cyan-500 font-bold text-3xl">facebook</h2>
